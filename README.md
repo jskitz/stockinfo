@@ -11,5 +11,13 @@ Install the database
 Setup virtualenvwrapper, django, and django rest framework
 
     pip install virtualenvwrapper
-    pip install django djangorestframework markdown django-filter
+    pip install django djangorestframework markdown django-filter ipython
+    pip install yahoo-finance
 
+Pull the project down from github into a source directory
+
+
+
+Add the settings path to the environment
+
+    export DJANGO_SETTINGS_MODULE=stockinfo.settings
