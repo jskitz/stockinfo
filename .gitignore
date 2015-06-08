@@ -13,7 +13,6 @@ __profile
 __css
 __js
 stockinfo/static
-data
 .idea
 *.jar
 mysql-connector-license.txt
