@@ -15,3 +15,18 @@ class Stock(models.Model):
 
     def __unicode__(self):
         return self.symbol
+
+class StockPrice(object):
+    """
+    Stock price objects are not stored in the database, and are just instantiated as prices
+    are pulled from Yahoo.
+    """
+    def __init__(self, *args, **kwargs):
+        self.symbol = kwargs['Symbol']
+        self.date = kwargs['Date']
+        self.opened_at = float(kwargs['Open'])
+        self.low = float(kwargs['Low'])
+        self.high = float(kwargs['High'])
+        self.closed_at = float(kwargs['Close'])
+        self.volume = int(kwargs['Volume'])
+        self.average = (self.opened_at + self.low + self.high + self.closed_at) / 4.0
