@@ -17,7 +17,6 @@ Setup virtualenvwrapper, django, and django rest framework
 Pull the project down from github into a source directory
 
 
-
 Add the settings path to the environment
 
     export DJANGO_SETTINGS_MODULE=stockinfo.settings
