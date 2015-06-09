@@ -31,7 +31,6 @@ class Command(BaseCommand):
                 stock_data.append(row)
 
         for stock in stock_data:
-            print 'working on ticker symbol %s' % stock['symbol']
             _stock, created = Stock.objects.get_or_create(symbol=stock['symbol'].strip())
             _stock.name = stock['name'].strip()
             if not stock['last_sale'].strip() == 'n/a':
