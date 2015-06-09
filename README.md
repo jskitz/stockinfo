@@ -32,7 +32,7 @@ Navigate to http://localhost:8000/api/ and login using admin credentials from ab
 * http://localhost:8000/api/stocks/?q=AAP - endpoint for doing a simple prefix match
 * http://localhost:8000/api/stocks/history/?symbol=YHOO - for getting a month worth of historic data.  This endpoint would likely change based on IDs once I get Ember working.
 
-###Frontend server setup
+###Frontend setup
 
 *Work in progress*
 
