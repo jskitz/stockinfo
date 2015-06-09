@@ -4,10 +4,6 @@ from rest_framework import routers
 
 from stockinfo.stocks import views
 
-# history_view = views.StockHistoryView.as_view({
-#     'get': 'get',
-# })
-
 router = routers.DefaultRouter()
 router.register(r'stocks', views.StockViewSet)
 
